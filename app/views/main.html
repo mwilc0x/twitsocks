@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="hero-unit">
+    <h1 class="text-center">TwitSocks</h1>
+    <hr>
+      <form class="navbar-form pull-left">
+          <input type="text" id="searchInput" ng-model="input" class="span2" focusInput>
+          <button type="submit" class="btn test" ng-click="submit()">Submit</button>
+      </form>
+      <div class="tweetHolder">
+        <ul id="pings" class="list-group">
+            <p ng-show="empty" class="text-center nothing">Nothing here yet...</p>
+            <li class="list-group-item" ng-repeat="tweet in tweets">
+                <p><strong> {{ tweet.user.name }}</strong></p>
+                <p> {{ tweet.text }}</p>
+            </li>
+        </ul>
+      </div>
+  </div>
+</div>
