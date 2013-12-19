@@ -1,6 +1,9 @@
 # TwitSocks
 Simple webapp using Node + WebSockets + Angular + MongoDB
 
+# Demo
+http://twitsocks.herokuapp.com/
+
 # Running Locally
 Make sure you have Node and MongoDB installed
 You'll need to register a twitter app at dev.twitter.com, use the
